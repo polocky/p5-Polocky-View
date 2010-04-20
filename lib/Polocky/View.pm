@@ -2,7 +2,7 @@ package Polocky::View;
 use Polocky::Class;
 use Module::Pluggable::Object;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 has 'engine_holder' => (
         is => 'rw',
@@ -52,6 +52,9 @@ __POLOCKY__;
 Polocky::View - View Engine for Polocky
 
 =head1 SYNOPSIS
+
+ ./bin/your-helper View View
+
 
  my $view = TestApp::View->new();
  my $content 

@@ -1,4 +1,7 @@
 Revision history for Perl extension Polocky::View
 
+0.02    2010-04-20
+        - adding Polocky::Setup::Helper::View
+
 0.01    Tue Apr 20 16:43:46 2010
         - original version

@@ -1,7 +1,7 @@
 package Polocky::View::TT;
 use Polocky::Class;
-extends qw(Polocky::View::Base);
 use Template;
+extends qw(Polocky::View::Base);
 
 has 'encoding' => ( is => 'rw', default => 'utf8' );
 has 'filters' => ( is => 'rw', lazy_build => 1);
