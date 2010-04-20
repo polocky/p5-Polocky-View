@@ -1,9 +1,12 @@
 use strict;
 use warnings;
-use Test::More;
+use Test::LoadAllModules;
 
 BEGIN {
-      use_ok( 'Polocky::View' );
+    all_uses_ok(
+            search_path => 'Polocky',
+            except => [qw/Polocky$/],
+            );
 }
 
-done_testing();
+

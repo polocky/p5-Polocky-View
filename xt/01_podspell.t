@@ -16,6 +16,5 @@ add_stopwords(<DATA>);
 all_pod_files_spelling_ok();
  
 __DATA__
-Default Name
-default {at} example.com
+polocky
 Polocky::View

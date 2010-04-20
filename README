@@ -1,27 +1,32 @@
-This is Perl module Polocky::View.
+NAME
+    Polocky::View - View Engine for Polocky
 
-INSTALLATION
+SYNOPSIS
+     my $view = TestApp::View->new();
+     my $content 
+        = $view->render('JSON',{ vars => { name => 'Polockyです' } });
 
-Polocky::View installation is straightforward. If your CPAN shell is set up,
-you should just be able to do
+     my $content 
+        = $view->render('TT',{ vars => { name => 'Polockyです' } });
 
-    % cpan Polocky::View
+     package TestApp::View;
+     use Polocky::Class;
+     extends qw/Polocky::View/;
+     __POLOCKY__;
 
-Download it, unpack it, then build it as per the usual:
+     package TestApp::View::TT;
+     use Polocky::Class;
+     extends qw/Polocky::View::TT/;
+     __POLOCKY__;
 
-    % perl Makefile.PL
-    % make && make test
+     package TestApp::View::JSON;
+     use Polocky::Class;
+     extends qw/Polocky::View::JSON/;
+     __POLOCKY__;
 
-Then install it:
+DESCRIPTION
+     view engine.
 
-    % make install
+AUTHOR
+    polocky
 
-DOCUMENTATION
-
-Polocky::View documentation is available as in POD. So you can do:
-
-    % perldoc Polocky::View
-
-to read the documentation online with your favorite pager.
-
-Default Name
