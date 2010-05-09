@@ -1,5 +1,8 @@
 Revision history for Perl extension Polocky::View
 
+0.03    2010-05-10
+        - Makefie.PL now works. thanks to woremacx
+
 0.02    2010-04-20
         - adding Polocky::Setup::Helper::View
 

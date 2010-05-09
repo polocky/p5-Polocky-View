@@ -2,7 +2,7 @@ package Polocky::View;
 use Polocky::Class;
 use Module::Pluggable::Object;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 has 'engine_holder' => (
         is => 'rw',

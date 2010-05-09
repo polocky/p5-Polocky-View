@@ -3,10 +3,10 @@ name 'Polocky-View';
 all_from 'lib/Polocky/View.pm';
 
 requires (
-    Template => 0,
-    JSON::Syck => 0,
-    Encode => 0,
-    Encode::JavaScript::UCS => 0,
+    'Template' => 0,
+    'JSON::Syck' => 0,
+    'Encode' => 0,
+    'Encode::JavaScript::UCS' => 0,
 );
 
 tests 't/*.t';
